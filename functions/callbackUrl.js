@@ -16,7 +16,7 @@ app.post("/:token", (req, res) => {
   console.log(JSON.stringify(callbackData));
 
   const parsedData = parse(callbackData);
-
+ 
   if (parsedData.resultCode == 0) {
     sendNotification(
       "MyDuka",
